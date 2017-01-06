@@ -1,0 +1,22 @@
+h1{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 36px;
+	text-align: center;
+	color: white;
+}
+.section8{
+	padding-top: 20px;
+	height: 1000px;
+	background: #35393a;
+	border-radius: 10px;
+}
+.doc{
+	background: none;
+	width: 100%;
+
+}
+.doc dd{
+	font-size: 18px;
+	color: white;
+}
