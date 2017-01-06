@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Deemo</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/deemostyle.css"/>
+		<script type="text/javascript">
+			window.onload=function(){
+				var ohd=document.getElementById("hd");
+				var hdul=ohd.getElementsByTagName('ul')[0];
+				var hdli=hdul.getElementsByTagName('li');
+				var obd =document.getElementById('bd');
+				var bdul=obd.getElementsByTagName('ul')[0];
+				var bdli=bdul.getElementsByTagName('li');
+				var pt=0;
+				var timer;
+				var i=0;
+				timer=setInterval(function(){
+					if(i==7){
+						i=0;
+					}
+					for(var j=0;j<hdli.length;j++){
+						hdli[j].style.backgroundColor='#8C8C8C';
+					}
+					hdli[i].style.backgroundColor='orangered';
+					switch(i){
+						case 0:pt=0;break;
+						case 1:pt=-640;break;
+						case 2:pt=-1280;break;
+						case 3:pt=-1920;break;
+						case 4:pt=-2560;break;
+						case 5:pt=-3200;break;
+						case 6:pt=-3840;break;
+					}
+					bdul.style.transform="translate("+pt+"px,0px)";
+				
+					i++;
+				},2000);	
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="focus" id="focus">
+				<div class="hd" id="hd">
+					<ul>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+					</ul>
+				</div>
+				<div class="bd" id="bd">
+					<div class="tempwrap">
+						<ul id="item-list" style="transition: all .4s ease-in-out;">
+							<li>
+								<img src="img/deemo/855288529487664.jpg"/>
+							</li>
+							<li>
+								<img src="img/deemo/793712472958513.jpg"/>
+							</li>
+							<li>
+								<img src="img/deemo/856567163597877.jpg"/>
+							</li>
+							<li>
+								<img src="img/deemo/818266128618266.jpg"/>
+							</li>
+							<li>
+								<img src="img/deemo/873124518613727.jpg"/>
+							</li>
+							<li>
+								<img src="img/deemo/526493721737727.jpg"/>
+							</li>
+							<li>
+								<img src="img/deemo/728853581992233.jpg"/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="goodtitle">
+				<div class="col-xs-8">
+					Deemo VOL.2
+				</div>
+			</div>
+			<div class="goodprice">
+				￥200.00
+			</div>
+			<div class="sell">
+				<i></i>
+				<span>销量: 48</span>
+				<span>赠送积分: 200</span>
+			</div>
+			<hr />
+			<div class="select">
+				请选择商品规格和数量
+				<input type="number" name="num" id="num" value="1"  />
+			</div>
+			<hr />
+			<div class="btn">
+				<a href="">加入购物车</a>
+				<a href="">立即购买</a>
+			</div>
+			<div class="store">
+				<div class="box">
+					<div class="box-left">
+						<img src="img/deemo/831237877941939.jpg"/>
+					</div>
+					<div class="box-right">
+						<h4>雷亚商城</h4>
+						<span>全部商品17款</span>
+					</div>
+					<div class="btn1">
+						<a href="">查看全部</a>
+						<a href="">商城首页</a>
+					</div>
+				</div>
+			</div>
+			<h6>&copy;雷亞商城</h6>
+		</div>	
+	</body>
+</html>

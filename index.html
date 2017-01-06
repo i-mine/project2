@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="keywords" content="Rayark 雷亚 Rayark Union 雷亚客 雷亚客官网 Deemo Cytus VOEZ Implosion Mandora">
+		<meta name="description" content="雷亚客（Rayark Union），简称RU，是获得雷亚承认并支持的大陆官方粉丝团。由一群热爱雷亚游戏的玩家和粉丝组成，致力于传播与扩散雷亚的资讯，让更多人接触和喜欢上雷亚；与雷亚游戏相关的优质内容生产和创造；打造和经营雷亚粉丝聚会交流的环境和活动；帮助雷亚粉丝成长与健康发展的社会团体。">
+		<title>雷亚客</title>
+		<script type="text/javascript" src="js/jquery1.11.1.js"></script>
+		<script type="text/javascript" src="js/time.js"></script>
+		<script type="text/javascript" src="js/jquery-1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var ie6 = document.all;
+				var dv = $('#nva'),
+					st;
+				dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离 
+				$(window).scroll(function() {
+					st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+					if(st > parseInt(dv.attr('otop'))) {
+						if(ie6) { //IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果 
+							dv.css({
+								position: 'absolute',
+								top: st
+							});
+						} else if(dv.css('position') != 'fixed') dv.css({
+							'position': 'fixed',
+							top: 0
+						});
+					} else if(dv.css('position') != 'static') dv.css({
+						'position': 'static'
+					});
+				});
+			});
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		
+	</head>
+
+	<body>
+		<!--首部-->
+		<div class="head" id="top">
+			<canvas id="top-canvas" width="1899px" height="389"></canvas>
+			<a href="#"><img id="logo" src="img/home/logo.png" /></a>
+			<div class="welcome">
+				<img src="img/home/welcome.png" />
+				<br />
+				<span id="down-word" href="#">
+					<a href="#">雷亚方舟下载</a>
+					<img src="img/home/homeTopBtn.png"/>
+				</span>
+
+			</div>
+			<div class="login">
+				<a href="#" id="open">Login &nbsp;|
+					<p class="border"></p>
+				</a>
+				<a href="signup.html">&nbsp;Sign up
+					<p class="border"></p>
+				</a>
+			</div>
+		</div>
+		<!--导航-->
+		<div class="navigation" id="nva">
+			<span id="time" style="font-size: 37px; color: white;">&gt;
+				<img src="img/home/0.png"/>
+				<img src="img/home/0.png"/>:
+				<img src="img/home/0.png"/>
+				<img src="img/home/0.png"/>:
+				<img src="img/home/0.png"/>
+				<img src="img/home/0.png"/>
+			</span>
+			<ul>
+				<li>
+					<a href="#top">
+						<i class="cbg"></i>
+						<img class="cimg" src="img/home/home.png" />
+					</a>
+				</li>
+				<li>
+					<a href="news.html">
+						<i class="cbg"></i>
+						<img class="cimg" src="img/home/news.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#activity">
+						<i class="cbg"></i>
+						<img class="cimg" src="img/home/activity.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#doujin">
+						<i class="cbg"></i>
+						<img class="cimg" src="img/home/doujin.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#store">
+						<i class="cbg"></i>
+						<img class="cimg" src="img/home/store.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#description">
+						<i class="cbg"></i>
+						<img class="cimg" src="img/home/description.png" />
+					</a>
+				</li>
+				<li>
+					<a href="#about">
+						<i class="cbg"></i>
+						<img class="cimg" src="img/home/about.png" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nva-bottom">
+			<div id="nva-bottom-content">
+				<i></i>
+				<a href="">除了你 或许没有几个手游公司会想到办音乐会</a>
+				<a href="">NOTICE</a>
+			</div>
+		</div>
+		<!--主体-->
+		<div id="main" class="main-view">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+			<canvas id="main-canvas" width="1903px" height="3222px"></canvas>
+			<div class="main-content">
+				<!--第一部分-->
+				<div class="section1 section" id="about">
+					<div class="content">
+						<div class="sortname">about</div>
+					</div>
+					<div class="left-about-box">
+						<div class="smallsortbox">
+							<h1>
+						<img src="img/home/about_TXT.png"/>
+					</h1>
+							<div id="video">
+								<video src="img/home/about.mp4" autoplay="true" loop="loop"></video>
+							</div>
+							<div class="about-content">
+								<h2>雷亚客</h2>
+								<p>由雷亚游戏粉丝组成，获得雷亚承认与支持的大陆官方粉丝团。</p>
+							</div>
+						</div>
+						<i></i>
+						<span id="trangle"></span>
+					</div>
+					<div class="right-about-box">
+						<ul>
+							<li>
+								<div class="left-img">
+									<img src="img/home/571e2b1c8ba41.jpg" />
+								</div>
+								<div class="right-about-content">
+									<h2>跳票不哭，只为精品</h2>
+									<p>致力于传播与扩散雷亚的资讯。</p>
+									<i></i>
+								</div>
+							</li>
+							<li>
+								<div class="left-img">
+									<img src="img/home/571e2b1c8ba41.jpg" />
+								</div>
+								<div class="right-about-content">
+									<h2>支持原创优质内容</h2>
+									<p>让更多人接触雷亚并喜欢上雷亚。</p>
+									<i></i>
+								</div>
+							</li>
+							<li>
+								<div class="left-img">
+									<img src="img/home/571e2b1c8ba41.jpg" />
+								</div>
+								<div class="right-about-content">
+									<h2>交流/互助/成长</h2>
+									<p>帮助雷亚粉丝成长与健康发展。</p>
+									<i></i>
+								</div>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--第二部分-->
+				<div class="section2 section" id="doujin">
+					<div class="content">
+						<div class="sortname">doujin</div>
+						<a href="#" class="morelink">
+							<span class="more">more+<p class="border"></p>
+							</span>
+						</a>
+					</div>
+					<ul class="doujin-list">
+						<li>
+							<div class="topimg">
+								<img src="img/home/57d4c5edbf826.png" alt="图片加载失败">
+								<i></i>
+								<em></em>
+								<h3>Demmo</h3>
+							</div>
+							<div class="bottomtxt">
+								<a href="#">
+									<h3>来自雷亚官方图赏</h3>
+								</a>
+								<p class="smalltitle">Rayark</p>
+								<p class="description"></p>
+								<i></i>
+								<em></em>
+							</div>
+
+						</li>
+						<li>
+							<div class="topimg">
+								<img src="img/home/57d393cea07a2.png" alt="图片加载失败">
+								<i></i>
+								<em></em>
+								<h3>Soul of Eden</h3>
+							</div>
+							<div class="bottomtxt">
+								<a href="#">
+									<h3>操弄</h3>
+								</a>
+								<p class="smalltitle">Rayark</p>
+								<p class="description">辛的心灵能力随着战争的扩大而日渐加强，渐渐的她发现自己不再只能将思想与脑波传达给洛恐的子民。在充分准备的状况下，辛的心灵能力足以影响</p>
+								<i></i>
+								<em></em>
+							</div>
+						</li>
+						<li>
+							<div class="topimg">
+								<img src="img/home/57d3937914d07.png" alt="图片加载失败">
+								<i></i>
+								<em></em>
+								<h3>Soul of Eden</h3>
+							</div>
+							<div class="bottomtxt">
+								<a href="#">
+									<h3>核弹风暴</h3>
+								</a>
+								<p class="smalltitle">Rayark</p>
+								<p class="description">当战争的层级逐渐上升，库伦对于战争推近陷入泥沼也渐渐感到不耐烦，一方面库伦对于自己产生“不耐烦”这样的情绪觉得特别，一方面库伦也着手</p>
+								<i></i>
+								<em></em>
+							</div>
+						</li>
+						<li>
+							<div class="topimg">
+								<img src="img/home/57d391c330a46.png" alt="图片加载失败">
+								<i></i>
+								<em></em>
+								<h3>Soul of Eden</h3>
+							</div>
+							<div class="bottomtxt">
+								<a href="#">
+									<h3>上校茉莉</h3>
+								</a>
+								<p class="smalltitle">Rayark</p>
+								<p class="description">有着一头白金发色、绑着双马尾的芙莉，俏皮的姿态底下藏着令人炫目的枪技，另一个身分则是绯瑞帝国的皇室血脉后代。在“终战日”那天，部分皇</p>
+								<i></i>
+								<em></em>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--第三部分-->
+				<div class="section3 section" id="activity">
+					<div class="content">
+						<div class="sortname">activity</div>
+						<a href="#" class="morelink">
+							<span class="more">more+<p class="border"></p>
+							</span>
+						</a>
+					</div>
+					<div class="activity">
+						<ul>
+							<li class="li1">
+								<div class="act-img">
+									<a href="#">
+										<img src="img/home/57eb1f9f2dc95.jpg" />
+									</a>
+								</div>
+								<dl>
+									<a href="#">
+										<dt>9月26日Rayark线上交流实录</dt>
+									</a>
+									<dd>
+										"9月26日19:00，雷亚客联合雷亚游戏团队在雷亚客QQ群开展了的线上交流会。雷亚的CEO游名扬，联合创始人Jerry Chang以及游戏制作人Gulu和火星人参与了此次活动，与中国大陆雷亚粉丝展开了密切交流，以下为问答活动实录。"
+									</dd>
+								</dl>
+								<em></em>
+								<i></i>
+							</li>
+							<li class="li2">
+								<div class="act-img">
+									<a href="#">
+										<img src="img/home/5798237004428.png" />
+									</a>
+								</div>
+								<dl>
+									<a href="#">
+										<dt>第一届RUCG比赛开赛啦！</dt>
+									</a>
+									<dd>
+										想面基参见大触吗？想见见自己的朋友吗？那就来参加RUCG吧！意想不到的惊喜等着你哦！快乐音游，快乐RUCG！
+									</dd>
+								</dl>
+								<em></em>
+								<i></i>
+							</li>
+							<li class="li3">
+								<div class="act-img">
+									<a href="#">
+										<img src="img/home/5768abf14add9.png" />
+									</a>
+								</div>
+								<dl>
+									<a href="#">
+										<dt>雷亚客河南同城第三次聚会回顾</dt>
+									</a>
+									<dd>
+										Apple Store的首聚！
+									</dd>
+								</dl>
+								<em></em>
+								<i></i>
+							</li>
+							<li class="li4">
+								<div class="act-img">
+									<a href="#">
+										<img src="img/home/5790d67ba2bbb.png" />
+									</a>
+								</div>
+								<dl>
+									<a href="#">
+										<dt>央美游戏艺术台湾行开催！</dt>
+									</a>
+									<dd>
+										雷亚优秀团队X央美豪华阵容——我最喜欢的雷亚，或许将由我来为它策划……
+									</dd>
+								</dl>
+								<em></em>
+								<i></i>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+				<!--第四部分-->
+				<div class="section4 section" id="news">
+					<div class="content">
+						<div class="sortname">news</div>
+						<a href="#" class="morelink">
+							<span class="more">more+<p class="border"></p>
+							</span>
+						</a>
+					</div>
+					<div class="news-left-box">
+						<div class="new-img">
+							<a href="#">
+								<img src="img/home/57d398e5b1f3f.png" />
+							</a>
+						</div>
+						<div class="new-txt">
+							<a href="#">
+								<h3>除了你 或许没有几个手游公司会想到办音乐会</h3>
+							</a>
+						</div>
+						<i></i>
+					</div>
+					<div class="news-right-box">
+						<div class="right-box1">
+							<div class="box1-img">
+								<a href="#">
+									<img src="img/home/57d394c254bb0.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="box1-txt">
+								<a href="#">
+									<h3>雷亚5周年！官方图赏~</h3>
+								</a>
+								<p>新的一年也要加油呀！...</p>
+								<i></i>
+
+							</div>
+						</div>
+						<div class="right-box2">
+							<div class="box2-img">
+								<a href="#">
+									<img src="img/home/57d3928104917.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="box2-txt">
+								<a href="#">
+									<h3>游走真实与迷幻的“永夜岛”登场</h3>
+								</a>
+								<p>
+									Cytus今（6）日推出全新 10.0 版本 Chapter Night Keepers，与台湾乐团 Night Keepers 守夜人合作 8 首歌曲，玩家更将随着故事的进行，与 Night Keepers 守夜人一起探索神秘未知的永夜岛，在真实与虚幻间找寻自我。
+								</p>
+								<i></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!--第五部分-->
+				<div class="section5 section" id="store">
+					<div class="content">
+						<div class="sortname">store</div>
+					</div>
+					<div class="storebox" id="storeBox" >
+						<ul>
+							<li class="l1">
+								<img class="buyimg" src="img/home/57202c3dcc0ac.jpg" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>Deemo精品</h4>
+										<h4>Deemo精品</h4>
+									</div>
+									<div class="buytxt">
+										<span>微信扫一扫购买</span><br />
+										<span>or</span><br />
+										<a href="deemopurchase.html">直接点击购买</a>
+									</div>
+								</div>
+								<img class="_2dcode" src="img/home/571db7467e073.png" />
+								<i></i>
+							</li>
+							<li class="l2">
+								<img class="buyimg" src="img/home/57202c47f32f4.jpg" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>MANDORA精品</h4>
+										<h4>MANDORA暖手枕</h4>
+									</div>
+									<div class="buytxt">
+										<span>微信扫一扫购买</span><br />
+										<span>or</span><br />
+										<a href="#">直接点击购买</a>
+									</div>
+								</div>
+								<img class="_2dcode" src="img/home/571db7467e073.png" />
+								<i></i>
+							</li>
+							<li class="l3">
+								<img class="buyimg" src="img/home/57202c512ca41.jpg" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>CYTUS精品</h4>
+										<h4>CYTUS L</h4>
+									</div>
+									<div class="buytxt">
+										<span>微信扫一扫购买</span><br />
+										<span>or</span><br />
+										<a href="#">直接点击购买</a>
+									</div>
+								</div>
+								<img class="_2dcode" src="img/home/571db7467e073.png" />
+								<i></i>
+							</li>
+							<li class="l4">
+								<img class="buyimg" src="img/home/57202c62d33ec.jpg" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>DEEMO</h4>
+										<h4>DEEMO邮件包</h4>
+									</div>
+									<div class="buytxt">
+										<span>微信扫一扫购买</span><br />
+										<span>or</span><br />
+										<a href="#">直接点击购买</a>
+									</div>
+								</div>
+								<img class="_2dcode" src="img/home/571db7467e073.png" />
+								<i></i>
+							</li>
+							<li class="l5">
+								<img class="buyimg" src="img/home/57202c59dc33d.jpg" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>IMLPLOSION</h4>
+										<h4>聚爆设定集</h4>
+									</div>
+									<div class="buytxt">
+										<span>微信扫一扫购买</span><br />
+										<span>or</span><br />
+										<a href="#">直接点击购买</a>
+									</div>
+								</div>
+								<img class="_2dcode" src="img/home/571db7467e073.png" />
+								<i></i>
+							</li>
+							<li class="l6">
+								<img class="buyimg" src="img/home/57202c9cc9345.jpg" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>IMPLOSION</h4>
+										<h4>CHRISTOPHE</h4>
+									</div>
+									<div class="buytxt">
+										<span>微信扫一扫购买</span><br />
+										<span>or</span><br />
+										<a href="#">直接点击购买</a>
+									</div>
+								</div>
+								<img class="_2dcode" src="img/home/571db7467e073.png" />
+								<i></i>
+							</li>
+						</ul>
+					</div>
+					<div class="control" id="controlsp">
+						<span id="sp1"></span>&nbsp;&nbsp;
+						<span id="sp2"></span>
+					</div>
+				</div>
+				<!--第六部分-->
+				<div class="section6 section" id="description">
+					<div class="content">
+						<div class="sortname">description</div>
+					</div>
+					<div class="storebox desbox" id="desBox" >
+						<ul>
+							<li class="l1">
+								<img class="buyimg" src="img/home/57d39746a3064.png" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>Deemo</h4>
+										<h4>Deemo是一款...</h4>
+									</div>
+									<div class="buytxt">
+										<span>Deemo</span><br />
+										<span>Deemo是一款...</span><br />
+										<a href="deemo.html">查看详情</a>
+									</div>
+								</div>
+								<i></i>
+							</li>
+							<li class="l2">
+								<img class="buyimg" src="img/home/5789bee94d604.png" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>Soul of Eden</h4>
+										<h4>《Soul of Ed</h4>
+									</div>
+									<div class="buytxt">
+										<span>Soul of Eden</span><br />
+										<span>《Soul of Ed</span><br />
+										<a href="#">查看详情</a>
+									</div>
+								</div>
+								
+								<i></i>
+							</li>
+							<li class="l3">
+								<img class="buyimg" src="img/home/57d397eb8ba5f.png" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>Voez</h4>
+										<h4>《兰空VOEZ》是雷亚...</h4>
+									</div>
+									<div class="buytxt">
+										<span>Voez</span><br />
+										<span>《兰空VOEZ》是雷亚...</span><br />
+										<a href="#">查看详情</a>
+									</div>
+								</div>
+								
+								<i></i>
+							</li>
+							<li class="l4">
+								<img class="buyimg" src="img/home/57d397c70d73f.png" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>Implosion</h4>
+										<h4>《Implosion聚...</h4>
+									</div>
+									<div class="buytxt">
+										<span>Implosion</span><br />
+										<span>《Implosion聚...</span><br />
+										<a href="#">查看详情</a>
+									</div>
+								</div>
+								
+								<i></i>
+							</li>
+							<li class="l5">
+								<img class="buyimg" src="img/home/57d3978400c59.png" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>Cytus</h4>
+										<h4>新简洁的游戏画面、创新...</h4>
+									</div>
+									<div class="buytxt">
+										<span>Cytus</span><br />
+										<span>新简洁的游戏画面、创新...</span><br />
+										<a href="#">查看详情</a>
+									</div>
+								</div>
+								
+								<i></i>
+							</li>
+							<li class="l6">
+								<img class="buyimg" src="img/home/57d397a16b6b2.png" />
+								<div class="buybox">
+									<div class="buytitle">
+										<h4>Mandora</h4>
+										<h4>《Mandora》是一...</h4>
+									</div>
+									<div class="buytxt">
+										<span>Mandora</span><br />
+										<span>《Mandora》是一...</span><br />
+										<a href="#">查看详情</a>
+									</div>
+								</div>
+								
+								<i></i>
+							</li>
+						</ul>
+					</div>
+					<div class="control" id="controlsp1">
+						<span id="spdes1"></span>&nbsp;&nbsp;
+						<span id="spdes2"></span>
+					</div>
+				</div>
+				<!--第七部分-->
+				<div class="bottom">
+					<div  class="section7 section">
+					<div id="foot">
+						<img id="foot_back" src="img/home/8a19504d69ad0fb3df1bb3ae9dea823b_foot.png"/>
+						<div class="foot_content">
+							<span>
+								<a href="#">
+									<img src="img/home/9f32e4b41d3008af5a5d695f0d07fb78_wechat.png"/>
+								</a>
+							</span>
+							<span>
+								<a href="#">
+									<img src="img/home/f02096d59a590a94cd8494534f61b770_sina.png"/>
+								</a>
+							</span>
+							<span>
+								<a href="#">
+									<img src="img/home/c6f76ffc34123640bfdd436501c41f1e_qq.png"/>
+								</a>
+							</span>
+							<span>
+								<a href="#">
+									<img src="img/home/699899238a4c1bd978caff240f390a47_tieba.png"/>
+								</a>
+							</span>
+							<p>
+							<a href="#">关于龙渊</a>
+							 | 
+							<a href="#">关于我们</a>
+						</p>
+						<p>
+							©2016 ALL Rights Reserved.版权所有.成都龙渊网络科技有限公司
+							<br />
+							蜀ICP备15023798号-3
+						</p>
+						</div>
+						
+						<em class="rayark"></em>
+						<em class="longyuan"></em>
+					</div>
+				</div>
+				</div>
+				<a id="gotop" href="#top">
+					<i class="before"></i>
+				</a>
+				<a id="qq-online" href="#">
+					<i class="before"></i>
+				</a>
+			</div>
+		</div>
+		<!--登录界面
+        -->
+		<div class="logincenter" id="loginceter" >
+			<div class="login-bg"></div>
+			<div class="login-box">
+				<div class="login-top">
+					<i class="rayark_logo"></i>
+					<i class="longyuan_logo"></i>
+				</div>
+				<form id="login-form" action="http://rayarkunion.com/user/bind.html">
+					<input type="text" name="account" id="account" value="" placeholder="手机号码/用户名(龙渊账号)"/>
+					<input type="password" name="pass" id="pass" value="" placeholder="密码"/><br />
+					<a href="#">忘记密码了 ?</a><br />
+					<input type="submit" name="loginto" id="loginto" value="登录" />
+					<input type="button" name="sign" id="sign" value="快速注册" />
+				</form>
+				<i id="close"></i>
+			</div>
+			
+		</div>
+		<!--下载界面
+        -->
+        <div class="downcenter" id="downceter">
+        	<div class="downbg"></div>
+        	<div class="downbox">
+        		<span id="downclose"></span>
+        		<div class="downimg">
+        			<img src="img/home/5735c8b197aaf.png"/>
+        		</div>
+        		<div class="bt">
+        			<a href="#" target="_blank">
+        				<span class="bg"></span>
+        				<span class="text">IOS下载</span>
+        			</a>
+        			<a href="#" target="_blank">
+        				<span class="bg bga"></span>
+        				<span class="text">Android下载</span>
+        			</a>
+        		</div>
+        	</div>
+        	
+        </div>
+		<!--
+        	作者：duleiland@126.com
+        	时间：2016-12-29
+        	描述：动态粒子特效
+        -->
+		<script type="text/javascript" src="js/TweenLite.js"></script>
+		<script type="text/javascript" src="js/EasePack.js"></script>
+		<script type="text/javascript" src="js/rAF.js"></script>
+		<script type="text/javascript" src="js/top.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</body>
+	
+</html>
